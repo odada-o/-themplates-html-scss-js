@@ -1,6 +1,6 @@
 # 프로젝트명
 
-KRDS (https://uiux.egovframe.go.kr/) 템플릿
+웹 기본 템플릿 -  https://odada-o.github.io/-themplates-html-scss-js/pages/
 
 ## 프로젝트 구조
 

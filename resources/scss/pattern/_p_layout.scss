@@ -1,6 +1,6 @@
-// 사이트 레이아웃 관련 요소
+// 사이트 레이아웃 스타일
 
-// grid layout
+// 전역 그리드
 .inner {
   position: relative;
   width: 100%;
@@ -12,6 +12,7 @@
   }
 }
 
+// 스킵 네비게이션
 #skip-nav {
   position: fixed;
   top: 0;
@@ -68,6 +69,7 @@
     height: 0;
     background: $gray-5;
     transition: all 0.3s;
+    border-top: 1px solid $gray-20;
   }
   .inner {
     display: flex;
@@ -166,7 +168,6 @@
     right: 0;
     height: 0;
     padding: 0;
-    background: $gray-5;
     transition: all 0.3s;
     &::after {
       content: "";
@@ -268,38 +269,5 @@
   &.active {
     display: block;
     left: 0;
-  }
-}
-
-// section layout
-.sec-g {
-  overflow: hidden;
-  padding: 10vw 0;
-  &__tit {
-    padding-bottom: 2.34375vw;
-    font-size: 3rem;
-  }
-  &__more {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 17px;
-    right: $p-mobile;
-    font-size: 2rem;
-    @include mobileMore {
-      right: $p-tablet;
-    }
-    &::after {
-      content: "\f061";
-      @include lineAwesome;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      background: $gray-20;
-      border-radius: 50%;
-    }
   }
 }

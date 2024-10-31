@@ -94,7 +94,7 @@
   padding-left: 12px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 8px;
     left: 0;
@@ -105,7 +105,7 @@
 }
 
 @mixin ff-g {
-  font-family: 'mGothic';
+  font-family: "mGothic";
 }
 
 @mixin position($p: absolute, $t: null, $b: null, $l: null, $r: null) {
@@ -117,7 +117,7 @@
 }
 
 @mixin lineAwesome {
-  font-family: 'Line Awesome Free';
+  font-family: "Line Awesome Free";
   font-weight: 900;
 }
 

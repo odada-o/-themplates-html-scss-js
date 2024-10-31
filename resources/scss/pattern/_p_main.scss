@@ -1,4 +1,4 @@
-// 사이트 컨텐츠 내용
+// 메인 페이지 스타일
 .slide-intro {
   .swiper-slide {
     position: relative;
@@ -25,7 +25,7 @@
       &__tit {
         font-size: 3rem;
         color: $gray-90;
-        font-family: "GmarketSansMedium";
+        font-family: 'GmarketSansMedium';
         font-weight: $font-medium;
       }
       &__cont {

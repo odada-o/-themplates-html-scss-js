@@ -53,7 +53,7 @@ q {
 blockquote {
   &:before,
   &:after {
-    content: "";
+    content: '';
     content: none;
   }
 }
@@ -61,7 +61,7 @@ blockquote {
 q {
   &:before,
   &:after {
-    content: "";
+    content: '';
     content: none;
   }
 }
@@ -92,15 +92,15 @@ body {
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 input {
-  &[type="text"],
-  &[type="password"],
-  &[type="submit"],
-  &[type="search"] {
+  &[type='text'],
+  &[type='password'],
+  &[type='submit'],
+  &[type='search'] {
     appearance: none;
     border-radius: 0;
   }
 
-  &:checked[type="checkbox"] {
+  &:checked[type='checkbox'] {
     background-color: $gray-20;
     appearance: checkbox;
   }
@@ -112,21 +112,20 @@ button {
 }
 
 input {
-  &[type="button"],
-  &[type="submit"],
-  &[type="reset"],
-  &[type="file"] {
+  &[type='button'],
+  &[type='submit'],
+  &[type='reset'],
+  &[type='file'] {
     appearance: button;
     border-radius: 0;
   }
 
-  &[type="search"]::-webkit-search-cancel-button {
+  &[type='search']::-webkit-search-cancel-button {
     appearance: none;
   }
 }
 
 /* 기본 폰트 설정 */
-/* mobile */
 html {
   font-size: $font-size-root;
 }
@@ -174,35 +173,8 @@ hr {
   display: none;
 }
 
-input[type="password"] {
-  font-family: "Malgun Gothic";
-}
-
-/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
-/* skipnavigation */
-#u-skip {
-  position: relative;
-  z-index: 3000;
-
-  a {
-    position: absolute;
-    top: -35px;
-    left: 0;
-    right: 0;
-    display: inline-block;
-    padding: 7px 10px 5px;
-    background: $font-color-base;
-    color: $white;
-    text-decoration: none;
-    text-align: center;
-    opacity: 0;
-
-    &:focus {
-      top: 0;
-      opacity: 1;
-      z-index: 1000;
-    }
-  }
+input[type='password'] {
+  font-family: 'Malgun Gothic';
 }
 
 /* 이미지 스프라이트 */
@@ -212,9 +184,6 @@ input[type="password"] {
   background: url(../../images/comm/img-comm.png) no-repeat;
   vertical-align: top;
 }
-
-/* 이미지 */
-/* global */
 
 .ir-pm {
   display: block;
@@ -282,6 +251,6 @@ legend {
     height: 0;
     font-size: 0;
     clear: both;
-    content: "";
+    content: '';
   }
 }

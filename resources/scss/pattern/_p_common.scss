@@ -7,7 +7,40 @@
   background-color: $gray-5;
 }
 
-// 전역 스타일
+// section 전역 스타일
+.sec-g {
+  overflow: hidden;
+  padding: 10vw 0;
+  &__tit {
+    padding-bottom: 2.34375vw;
+    font-size: 3rem;
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 17px;
+    right: $p-mobile;
+    font-size: 2rem;
+    @include mobileMore {
+      right: $p-tablet;
+    }
+    &::after {
+      content: '\f061';
+      @include lineAwesome;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: $gray-20;
+      border-radius: 50%;
+    }
+  }
+}
+
+// swiper 전역 스타일
 .swiper {
   width: 100%;
   height: 100%;
@@ -42,9 +75,9 @@
     opacity: 0.5;
   }
   .swiper-button-next::before {
-    content: "\f138";
+    content: '\f138';
   }
   .swiper-button-prev::before {
-    content: "\f137";
+    content: '\f137';
   }
 }

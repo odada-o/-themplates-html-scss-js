@@ -47,30 +47,31 @@ $gray-80: #2d2d2d; // text-title
 $gray-90: #1d1d1d;
 $gray-100: #000000;
 
+//font weight
+$font-light: 300 !default;
+$font-normal: 400 !default;
+$font-medium: 500 !default;
+$font-semibold: 600 !default;
+$font-bold: 700 !default;
+$font-bolder: 800 !default;
+
 // font-style
 $font-family-base: "Noto Sans KR", sans-serif !default;
 $font-size-root: 62.5% !default; //10px 1rem으로 설정
 $font-size-base: 1.7rem !default;
 $font-color-base: $gray-90 !default;
-$font-weight-base: 400 !default;
-
-//font weight
-$font-light: 300 !default;
-$font-normal: 400 !default;
-$font-medium: 500 !default;
-$font-bold: 700 !default;
-$font-bolder: 800 !default;
+$font-weight-base: $font-normal !default;
 
 //line height style
 $line-height-none: 1 !default;
 $line-height-base: 1.5 !default;
 
-// layout
+// layout 1280px 기준
 $grid: 1340px !default;
 $p-tablet: 30px !default;
 $p-mobile: 20px !default;
 
-$hdH: 60px;
+$hdH: 80px;
 $hdH-xl: 80px;
 
 $ftH: 70px;

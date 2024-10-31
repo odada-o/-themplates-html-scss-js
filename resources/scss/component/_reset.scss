@@ -37,6 +37,11 @@ img {
   border: 0 none;
 }
 
+img,
+video {
+  max-width: 100%;
+}
+
 dl,
 ul,
 ol,
@@ -53,7 +58,7 @@ q {
 blockquote {
   &:before,
   &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -61,7 +66,7 @@ blockquote {
 q {
   &:before,
   &:after {
-    content: '';
+    content: "";
     content: none;
   }
 }
@@ -92,15 +97,15 @@ body {
 
 /* 뷰표트 변환시 폰트크기 자동확대 방지 */
 input {
-  &[type='text'],
-  &[type='password'],
-  &[type='submit'],
-  &[type='search'] {
+  &[type="text"],
+  &[type="password"],
+  &[type="submit"],
+  &[type="search"] {
     appearance: none;
     border-radius: 0;
   }
 
-  &:checked[type='checkbox'] {
+  &:checked[type="checkbox"] {
     background-color: $gray-20;
     appearance: checkbox;
   }
@@ -112,15 +117,15 @@ button {
 }
 
 input {
-  &[type='button'],
-  &[type='submit'],
-  &[type='reset'],
-  &[type='file'] {
+  &[type="button"],
+  &[type="submit"],
+  &[type="reset"],
+  &[type="file"] {
     appearance: button;
     border-radius: 0;
   }
 
-  &[type='search']::-webkit-search-cancel-button {
+  &[type="search"]::-webkit-search-cancel-button {
     appearance: none;
   }
 }
@@ -173,8 +178,8 @@ hr {
   display: none;
 }
 
-input[type='password'] {
-  font-family: 'Malgun Gothic';
+input[type="password"] {
+  font-family: "Malgun Gothic";
 }
 
 /* 이미지 스프라이트 */
@@ -251,6 +256,6 @@ legend {
     height: 0;
     font-size: 0;
     clear: both;
-    content: '';
+    content: "";
   }
 }

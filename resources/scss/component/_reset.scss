@@ -1,3 +1,26 @@
+/* 기본 폰트 설정 */
+html {
+  font-size: $font-size-root; // 62.5% = 10px = 1rem
+}
+body {
+  overflow-x: hidden;
+  font-size: $font-size-base; // 17px = 1.6rem
+  line-height: $line-height-base; // 1.5
+  font-family: $font-family-base; // "Noto Sans KR", sans-serif;
+  color: $font-color-base; // #1d1d1d;
+  font-weight: $font-weight-base; // 400
+}
+
+a {
+  color: $font-color-base;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 /* reset */
 body,
 div,
@@ -127,39 +150,6 @@ input {
 
   &[type="search"]::-webkit-search-cancel-button {
     appearance: none;
-  }
-}
-
-/* 기본 폰트 설정 */
-html {
-  font-size: $font-size-root;
-}
-body {
-  font-size: $font-size-base;
-  line-height: $line-height-base;
-  font-family: $font-family-base;
-  color: $font-color-base;
-  font-weight: $font-weight-base;
-}
-
-a {
-  color: $font-color-base;
-  text-decoration: none;
-
-  &:active,
-  &:hover {
-    text-decoration: none;
-  }
-}
-@media screen and (min-width: 1280px) {
-  a {
-    color: $font-color-base;
-    text-decoration: none;
-
-    &:active,
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 

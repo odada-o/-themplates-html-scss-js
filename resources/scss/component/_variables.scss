@@ -43,8 +43,8 @@ $gray-40: #c6c6c6; // border
 $gray-50: #8e8e8e; // text-disabled
 $gray-60: #717171; // 입력창 기본 상태
 $gray-70: #555555; // text-body, detail text
-$gray-80: #2d2d2d; // text-title
-$gray-90: #1d1d1d;
+$gray-80: #2d2d2d;
+$gray-90: #1d1d1d; // text-title
 $gray-100: #000000;
 
 //font weight
@@ -56,7 +56,7 @@ $font-bold: 700 !default;
 $font-bolder: 800 !default;
 
 // font-style
-$font-family-base: "Noto Sans KR", sans-serif !default;
+$font-family-base: "Pretendard", sans-serif !default;
 $font-size-root: 62.5% !default; //10px 1rem으로 설정
 $font-size-base: 1.7rem !default;
 $font-color-base: $gray-90 !default;
